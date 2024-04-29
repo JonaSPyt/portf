@@ -1,2 +1,0 @@
-const __vite__fileDeps=["assets/ParallaxMover-DLrwp6Ez.js","assets/index-3UHWr5PJ.js","assets/index-DScOe8p6.css"],__vite__mapDeps=i=>i.map(i=>__vite__fileDeps[i]);
-import{_ as t}from"./index-3UHWr5PJ.js";async function l(a,r=!0){await a.addMover("parallax",async()=>{const{ParallaxMover:o}=await t(()=>import("./ParallaxMover-DLrwp6Ez.js"),__vite__mapDeps([0,1,2]));return new o},r)}export{l as loadParallaxMover};
