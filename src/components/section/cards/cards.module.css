@@ -57,6 +57,7 @@
     padding-left: 25%;
 }
 .exp{
+    font-size: clamp(13px,1vw,50px);
     padding: 20px;
     text-align: justify;
     color: var(--main-color);
