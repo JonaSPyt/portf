@@ -1,0 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+
+}
+html{
+  scroll-padding: 10em;
+}
+.container-fluid{
+  height: fit-content;
+  background-color: rgb(31, 31, 31);
+  
+}
+
+::-webkit-scrollbar{
+  width: 15px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: var(--main-color);
+}
+
+::-webkit-scrollbar-thumb{
+  background:rgba(40, 233, 140, 0.39);
+  border-radius: 10px;
+}
+
+#particles{
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}

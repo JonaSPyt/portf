@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.content_container{
+    width: 60%;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+.title{
+    color: rgba(255, 255, 255, 0.807);
+    width: min-content;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: clamp(13px,2vw,50px);
+    overflow: hidden; 
+    white-space: nowrap;
+    letter-spacing: .2em; 
+    animation: 
+        typing 3.5s steps(60, end),
+        blink-caret .75s step-end infinite;
+    
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+
+.span{
+    color: var(--secundary-color);
+}
+
+.sub{
+    font-size: clamp(20px,1.2vw,50px);
+    color: #e2e1e1;
+    width: min-content;
+    padding: 10px;
+    transform:translate(0,-35%) ;
+    border: 1px solid #e2e1e1;
+    border-radius: 10px;
+}
+
+.sobre{
+    color: #e2e1e1;
+    text-align: justify;
+    padding-top: 10%;
+    padding-left: 7%;
+    width: 100%;
+    font-size: clamp(16px,1vw,50px);
+}
+
+@media only screen and (max-width: 1120px) {
+    
+    .content_container{
+        min-width: 100%;
+    }
+    .content{
+        padding-left: 10px;
+        padding-top: 10px;
+        text-align: center;
+    }
+    .sobre{
+        width: 95%;
+        padding: 0;
+    }
+    .title{
+        font-size: clamp(13px,3.5vw,50px);
+    }
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+  }
+
+  

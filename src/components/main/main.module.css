@@ -1,0 +1,15 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    height: min-content;
+    align-items: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1120px) {
+    .main{
+        flex-direction: column;
+        
+    }
+  }
