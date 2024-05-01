@@ -1,8 +1,3 @@
-# React + Vite
+![Captura de tela 2024-04-30 132235](https://github.com/JonaSPyt/portf/assets/91990996/5e042cb5-d797-4694-ba82-49d9d94a47f1)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Desenvolvi meu portfólio utilizando React, HTML e CSS, combinando tecnologias modernas para criar uma apresentação online única e personalizada do meu trabalho. Utilizando React, pude criar uma experiência interativa e dinâmica para os visitantes, enquanto o HTML foi utilizado para estruturar o conteúdo de forma clara e acessível. Com CSS, estilizei cada elemento do meu portfólio, garantindo uma aparência visualmente atraente e responsiva em diferentes dispositivos. Meu portfólio reflete não apenas minhas habilidades técnicas em desenvolvimento web, mas também minha criatividade e capacidade de apresentar meu trabalho de forma profissional e impactante.
