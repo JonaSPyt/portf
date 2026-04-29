@@ -8,7 +8,7 @@ function About() {
                     Olá, sou <span className={Styles.span}>Jonas</span>, Desenvolvedor Full&#8209;Stack
                 </h1>
                 <p className={Styles.sobre}>
-                    Tenho 21 anos e sou estudante de Engenharia da Computação no IFCE.
+                    Tenho 23 anos e sou estudante de Engenharia da Computação no IFCE.
                     Atuo como desenvolvedor Full-Stack, criando interfaces modernas com React e Vue,
                     e APIs robustas com FastAPI e Node.js. Tenho domínio sólido em HTML, CSS,
                     JavaScript e TypeScript, sempre buscando boas práticas, design responsivo e
