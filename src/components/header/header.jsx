@@ -1,30 +1,34 @@
 import { useState } from "react";
 import Styles from "./header.module.css"
-import { FaBars,FaFolderClosed,FaHammer,FaEnvelope,FaDev} from "react-icons/fa6";
-function Header(){
-    const [open,setOpen] = useState(true)
-    return(
+import { FaBars, FaFolderClosed, FaHammer, FaEnvelope, FaXmark } from "react-icons/fa6";
 
-            <nav className={Styles.header}>
-                <div className={Styles.head}>
-                    <div className={Styles.logo}>{"<JN/>"}</div>
-                    <button className={Styles.bar} onClick={()=> (setOpen(!open),console.log(open))}><FaBars/></button>
-                    <ul className={Styles.menu_container}>
-                    <li className={Styles.menu}><a className={Styles.links} href="#sobre" ><FaBars />Sobre</a></li>
-                    <li className={Styles.menu}><a className={Styles.links} href="#projetos" ><FaFolderClosed/>Projetos</a></li>
-                    <li className={Styles.menu}><a className={Styles.links} href="#habilidade" ><FaHammer/>Habilidades</a></li>
-                    <li className={Styles.menu}><a className={Styles.links} href="#contato" ><FaEnvelope/>Contato</a></li>
+function Header() {
+    const [menuOpen, setMenuOpen] = useState(false)
+
+    const closeMenu = () => setMenuOpen(false)
+
+    return (
+        <nav className={Styles.header}>
+            <div className={Styles.head}>
+                <div className={Styles.logo}>{"<JN/>"}</div>
+                <ul className={Styles.menu_container}>
+                    <li className={Styles.menu}><a className={Styles.links} href="#sobre"><FaHammer />Sobre</a></li>
+                    <li className={Styles.menu}><a className={Styles.links} href="#projetos"><FaFolderClosed />Projetos</a></li>
+                    <li className={Styles.menu}><a className={Styles.links} href="#habilidade"><FaHammer />Habilidades</a></li>
+                    <li className={Styles.menu}><a className={Styles.links} href="#contato"><FaEnvelope />Contato</a></li>
                 </ul>
-                </div>
-                
-                <div id={open ? Styles.open : ""} className={Styles.aside}>
-                    <li className={Styles.menu}><a className={Styles.links} onClick={()=>(setOpen(true))} href="#sobre" ><FaBars />Sobre</a></li>
-                    <li className={Styles.menu}><a className={Styles.links} onClick={()=>(setOpen(true))} href="#projetos" ><FaFolderClosed/>Projetos</a></li>
-                    <li className={Styles.menu}><a className={Styles.links} onClick={()=>(setOpen(true))} href="#habilidade" ><FaHammer/>Habilidades</a></li>
-                    <li className={Styles.menu}><a className={Styles.links} onClick={()=>(setOpen(true))} href="#contato" ><FaEnvelope/>Contato</a></li>
-                </div>
-            </nav>
-        
+                <button className={Styles.bar} onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu">
+                    {menuOpen ? <FaXmark /> : <FaBars />}
+                </button>
+            </div>
+
+            <ul className={`${Styles.aside} ${menuOpen ? Styles.aside_open : ""}`}>
+                <li className={Styles.menu}><a className={Styles.links} onClick={closeMenu} href="#sobre"><FaHammer />Sobre</a></li>
+                <li className={Styles.menu}><a className={Styles.links} onClick={closeMenu} href="#projetos"><FaFolderClosed />Projetos</a></li>
+                <li className={Styles.menu}><a className={Styles.links} onClick={closeMenu} href="#habilidade"><FaHammer />Habilidades</a></li>
+                <li className={Styles.menu}><a className={Styles.links} onClick={closeMenu} href="#contato"><FaEnvelope />Contato</a></li>
+            </ul>
+        </nav>
     )
 }
 

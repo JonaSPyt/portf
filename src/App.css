@@ -1,37 +1,50 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root {
+  --main-color: #999999;
+  --secundary-color: rgb(40, 233, 140);
+  --terceary-color: #fff;
+  --bg-color: rgb(20, 20, 20);
+  --surface-color: rgba(255, 255, 255, 0.04);
+  --border-color: rgba(255, 255, 255, 0.12);
+}
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Roboto;
-
-}
-html{
-  scroll-padding: 10em;
-}
-.container-fluid{
-  height: fit-content;
-  background-color: rgb(31, 31, 31);
-  
+  font-family: Roboto, sans-serif;
 }
 
-::-webkit-scrollbar{
-  width: 15px;
+html {
+  scroll-padding-top: 90px;
+  scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar-track{
-  background-color: var(--main-color);
+.container-fluid {
+  min-height: 100vh;
+  background-color: var(--bg-color);
 }
 
-::-webkit-scrollbar-thumb{
-  background:rgba(40, 233, 140, 0.39);
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(40, 233, 140, 0.5);
   border-radius: 10px;
 }
 
-#particles{
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(40, 233, 140, 0.8);
+}
+
+#particles {
   z-index: -1;
   height: 100%;
   width: 100%;

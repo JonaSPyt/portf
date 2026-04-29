@@ -1,85 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-.content_container{
+.content_container {
     width: 60%;
 }
 
-.content{
+.content {
     width: 100%;
     height: 100%;
-    padding-left: 100px;
+    padding-left: 80px;
     padding-top: 50px;
+    padding-right: 40px;
 }
 
-.title{
-    color: rgba(255, 255, 255, 0.807);
-    font-family: Inter;
+.title {
+    color: rgba(255, 255, 255, 0.9);
+    font-family: Inter, sans-serif;
     font-weight: 400;
-    font-size: clamp(11px,2vw,55px);
-    overflow: hidden; 
+    font-size: clamp(18px, 2.2vw, 55px);
+    overflow: hidden;
     white-space: nowrap;
-    letter-spacing: .16em; 
-    animation: 
+    letter-spacing: .12em;
+    animation:
         typing 3.5s steps(60, end),
         blink-caret .75s step-end infinite;
-    
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+    from { width: 0 }
+    to { width: 100% }
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+    from, to { border-color: transparent }
+    50% { border-color: var(--secundary-color); }
 }
 
-
-.span{
+.span {
     color: var(--secundary-color);
 }
 
-.sub{
-    font-size: clamp(20px,1.2vw,50px);
-    color: #e2e1e1;
+.sub {
+    font-size: clamp(12px, 1vw, 18px);
+    color: var(--secundary-color);
     width: min-content;
-    padding: 10px;
-    transform:translate(0,-35%) ;
-    border: 1px solid #e2e1e1;
-    border-radius: 10px;
+    white-space: nowrap;
+    padding: 6px 14px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(40, 233, 140, 0.5);
+    border-radius: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
-.sobre{
-    color: #e2e1e1;
+.sobre {
+    color: rgba(225, 225, 225, 0.75);
     text-align: justify;
-    padding-top: 10%;
-    padding-left: 7%;
+    padding-top: 30px;
     width: 100%;
-    font-size: clamp(16px,1vw,50px);
+    font-size: clamp(14px, 1.05vw, 18px);
+    line-height: 1.8;
 }
 
 @media only screen and (max-width: 1120px) {
-    
-    .content_container{
+    .content_container {
         min-width: 100%;
     }
-    .content{
-        padding-left: 10px;
-        padding-top: 10px;
+    .content {
+        padding: 30px 20px 10px;
         text-align: center;
     }
-    .sobre{
+    .sobre {
         width: 95%;
-        padding: 0;
+        padding-top: 20px;
+        text-align: left;
+        margin: 0 auto;
     }
-    .title{
-        font-size: clamp(13px,3.5vw,50px);
+    .title {
+        font-size: clamp(15px, 4vw, 50px);
     }
-    @keyframes typing {
-        from { width: 0 }
-        to { width: 100% }
-      }
-  }
-
-  
+}
